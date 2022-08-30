@@ -1,0 +1,131 @@
+// body {
+//     min-height: 100vh;
+//     display: grid;
+//     place-items: center;
+// }
+
+// .slider {
+//     height: 250px;
+//     margin: auto;
+//     position: relative;
+//     width: 90%;
+//     display: grid;
+//     place-items: center;
+//     overflow: hidden;
+// }
+
+// .slide-track {
+//     display: flex;
+//     width: calc(250px*18);
+//     animation: scroll 40s linear infinite;
+// }
+
+// .slide-track:hover{
+//     animation-play-state:paused;
+// }
+
+// @keyframes scroll{
+//     0%{
+//         transform: translateX(0);
+//     }
+//     100%{
+//         transform: translateX(calc(-250px * 9));
+//     }
+// }
+
+// .slide {
+//     height: 200px;
+//     width: 250px;
+//     display: flex;
+//     align-items: center;
+//     padding: 15px;
+//     perspective: 100px;
+// }
+
+// img {
+//     width: 100%;
+//     transition: transform 1s;
+// }
+
+// img:hover{
+//     transform: translateZ(20px);
+// }
+
+
+
+
+
+#slider-area {
+    position: relative;
+    padding: 40px;
+}
+
+#slider-area .info {
+    font-size: 30px;
+}
+
+#slider-area .container {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+}
+
+#slider-area .container::-webkit-scrollbar {
+    display: none;
+}
+
+#slider-area .container .cards {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 340px;
+    margin-right: 40px;
+}
+
+#slider-area .container .cards .img {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: pointer;
+
+    .info-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .description {
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+#last-news .container .cards h3 {
+    cursor: pointer;
+}
+
+
+#slider-area .bck-btn {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    cursor: pointer;
+    color: rgb(28, 28, 59);
+}
+
+#slider-area .nxt-btn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 200px;
+    left: 1660px;
+    cursor: pointer;
+    color: rgb(22, 22, 29);
+}
